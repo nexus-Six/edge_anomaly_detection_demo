@@ -1,0 +1,55 @@
+apiVersion: image.openshift.io/v1
+kind: ImageStream
+metadata:
+  name: machine-sensor
+spec:
+  tags:
+  - name: 0.3.1-9
+    from:
+      kind: DockerImage
+      name: quay.io/manuela/iot-software-sensor:0.3.1-9
+    importPolicy: {}
+    referencePolicy:
+      type: Local
+  - name: 0.3.1-10
+    from:
+      kind: DockerImage
+      name: quay.io/manuela/iot-software-sensor:0.3.1-10
+    importPolicy: {}
+    referencePolicy:
+      type: Local
+  - name: 0.3.1-11
+    from:
+      kind: DockerImage
+      name: quay.io/manuela/iot-software-sensor:0.3.1-11
+    importPolicy: {}
+    referencePolicy:
+      type: Local
+  - name: 0.3.1-13
+    from:
+      kind: DockerImage
+      name: quay.io/manuela/iot-software-sensor:0.3.1-13
+    importPolicy: {}
+    referencePolicy:
+      type: Local
+  - name: 0.3.1-16
+    from:
+      kind: DockerImage
+      name: quay.io/manuela/iot-software-sensor:0.3.1-16
+    importPolicy: {}
+    referencePolicy:
+      type: Local
+  - name: 0.3.1-17
+    from:
+      kind: DockerImage
+      name: quay.io/manuela/iot-software-sensor:0.3.1-17
+    importPolicy: {}
+    referencePolicy:
+      type: Local
+  - name: 0.3.1-18
+    from:
+      kind: DockerImage
+      name: quay.io/manuela/iot-software-sensor:0.3.1-18
+    importPolicy: {}
+    referencePolicy:
+      type: Local
