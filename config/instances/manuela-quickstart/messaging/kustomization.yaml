@@ -17,6 +17,6 @@ bases:
 
 images:
 - name: messaging
-  newName: quay.io/manuela/iot-consumer
-  newTag: quickstart
+  newName: quay.io/nexus6/edge-anomaly-detection-consumer
+  newTag: latest
 
